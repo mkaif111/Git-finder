@@ -13,10 +13,11 @@ export class Useritem extends Component {
     };
 
     render() {
-        const {login,avatar_url,html_url} = this.state;
+        // name in var in const should same as props , order is not mandatory
+        const {login,avatar_url,html_url} = this.props.user;
 
         return (
-            <div className="card text-center " style={{width:"200px",marginLeft:"1rem"}} >
+            <div className="card text-center ">
 
                 <img 
                     src={avatar_url}
