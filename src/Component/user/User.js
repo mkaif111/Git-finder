@@ -37,7 +37,7 @@ export class User extends Component {
                     <Useritem key={user.id} user ={user} />
                 ))}
             </div>
-        )
+        );
     }
 }
 const userStyle = {
